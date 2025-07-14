@@ -9,9 +9,15 @@ while (true) {
         continue;
     } else {
         moneySum = prompt("Введите потраченную людьми сумму: ");
+    };
+
+    if (moneySum < 0) {
+        alert("Вы залезли в долги!");
+        continue;
+    } else {
         break;
-    }
-}
+    };
+};
 
 let tip = Math.ceil((moneySum * 1.1) / people);
 
